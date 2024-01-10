@@ -1,7 +1,8 @@
-import { checkAnswer } from './answerChecker.js';
-import { generateProblem } from './problemGenerator.js';
-import { getUserInput } from './userInput.js';
-
+// Import the functions or variables from userInput.js
+// Import other modules similarly
+//import { checkAnswer } from './controllers/answerChecker.js';
+//import { generateProblem } from './controllers/problemGenerator.js';
+/*
 // Game loop or function
 function playGame() {
   // Generate a problem
@@ -22,4 +23,4 @@ function playGame() {
 }
 
 // Call the playGame function to start the game
-playGame();
+playGame(); */

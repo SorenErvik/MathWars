@@ -53,6 +53,9 @@ app.use(passport.session());
 // Serve static files from the 'controllers' directory
 app.use("/controllers", express.static(__dirname + "/controllers"));
 
+// Serve static files from the root directory
+app.use("/", express.static(__dirname));
+
 
 //Use flash messages for errors, info, ect...
 app.use(flash());
