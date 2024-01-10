@@ -3,11 +3,12 @@ This module is responsible for generating the math problems for the user to solv
 */
 
 
-let a = Math.floor(Math.random() * 100) + 1; // Determining the first number
-let b = Math.floor(Math.random() * 100) + 1; // Determining the second number
-let operator; // Declare the operator variable outside the function
+const problemGenerator = () => {
+  let a = Math.floor(Math.random() * 100) + 1;
+  let b = Math.floor(Math.random() * 100) + 1;
+  let operator;
 
-function determineOperator() {
+  function determineOperator() {
     let num = Math.random();
     if (num < 0.26) {
       operator = "+";
@@ -22,9 +23,9 @@ function determineOperator() {
 
   determineOperator();
 
-let question = `What is ${a} ${operator} ${b}? Round down to the nearest whole number.`;
+  let question = `What is ${a} ${operator} ${b}? Round down to the nearest whole number.`;
 
-function calculateAnswer(a, b, operator) {
+  function calculateAnswer(a, b, operator) {
     switch (operator) {
       case "+":
         return Math.floor(a + b);
@@ -39,3 +40,11 @@ function calculateAnswer(a, b, operator) {
         return "Invalid operator";
     }
   }
+
+  return {
+    getQuestion: () => question,
+    getAnswer: () => calculateAnswer(a, b, operator),
+  };
+};
+
+export default problemGenerator;
