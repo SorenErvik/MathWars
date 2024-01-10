@@ -50,6 +50,10 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Serve static files from the 'controllers' directory
+app.use("/controllers", express.static(__dirname + "/controllers"));
+
+
 //Use flash messages for errors, info, ect...
 app.use(flash());
 
