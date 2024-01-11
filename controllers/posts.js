@@ -15,6 +15,13 @@ module.exports = {
       console.log(err);
     }
   },
+  getGame: async (req, res) => {
+    try {
+      res.render("game.ejs", { user: req.user });
+    } catch (err) {
+      console.log(err);
+    }
+  },
   getPost: async (req, res) => {
     try {
       //id parameter comes from the post routes
