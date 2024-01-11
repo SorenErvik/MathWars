@@ -52,8 +52,7 @@ function generateProblem() {
   return { question, answer };
 }
 
-// Call generateProblem to log to console
-generateProblem();
 
 // You can also export the generateProblem function if needed
 export { generateProblem };
+
