@@ -21,8 +21,6 @@ function determineOperator() {
 
 determineOperator();
 
-let question = `What is ${a} ${operator} ${b}? Round down to the nearest whole number.`;
-
 function calculateAnswer(a, b, operator) {
   switch (operator) {
     case "+":
