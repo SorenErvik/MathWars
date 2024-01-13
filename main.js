@@ -32,4 +32,7 @@ async function playGame() {
 }
 
 // Call the playGame function to start the game
-playGame();
+//playGame();
+
+// Add event listener to start the game when the button is clicked
+document.getElementById('startGameButton').addEventListener('click', playGame());
