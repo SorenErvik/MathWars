@@ -1,5 +1,3 @@
-import { generateProblem } from './controllers/problemGenerator.js';
-import userInputModule from './controllers/userInput.js';
 
 // Game loop or function
 async function playGame() {
@@ -29,7 +27,7 @@ async function playGame() {
   }
 
   console.log('Out of lives. Game over!');
-}
+} 
 
 // Call the playGame function to start the game
 playGame();
