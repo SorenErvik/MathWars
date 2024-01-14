@@ -16,9 +16,24 @@ export function renderQuestion(question) {
 
 export function renderLives(lives) {
     const livesContainer = document.getElementById('livesContainer');
+    
+    // Clear existing content
+    livesContainer.innerHTML = '';
 
     const livesElement = document.createElement('p');
     livesElement.textContent = `Remaining Lives: ${lives}`;
 
     livesContainer.appendChild(livesElement);
+}
+
+export function renderScore(score) {
+    const scoreContainer = document.getElementById('scoreContainer');
+
+    // Clear existing content
+    scoreContainer.innerHTML = '';
+
+    const scoreElement = document.createElement('p');
+    scoreElement.textContent = `Score: ${score}`;
+
+    scoreContainer.appendChild(scoreElement);
 }

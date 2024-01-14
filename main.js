@@ -1,10 +1,11 @@
 import { generateProblem } from './controllers/problemGenerator.js';
-import { renderLives, renderQuestion } from './controllers/render-game.js';
+import { renderLives, renderQuestion, renderScore } from './controllers/render-game.js';
 import userInputModule from './controllers/userInput.js';
 
 // Game loop or function
 async function playGame() {
   let lives = 3;
+  let score = 0;
 
   while (lives > 0) {
     // Generate a problem
@@ -19,12 +20,16 @@ async function playGame() {
     // Render the number of lives to the user
     renderLives(lives);
 
+    // Render the score of the user
+    renderScore(score);
+
     // Get user input using async/await
     try {
       const userAnswer = await userInputModule.handleButtonClick();
       // Check the user's answer using the answerChecker module
       if (userAnswer == expectedAnswer) {
         console.log('Correct!'); // Handle correct answer logic
+        score++; // Increment score on correct answer
       } else {
         console.log('Incorrect!'); // Handle incorrect answer logic
         lives--; // Decrement lives on incorrect answer
