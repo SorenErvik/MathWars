@@ -43,10 +43,6 @@ function generateProblem() {
   const question = `What is ${a} ${operator} ${b}? Round down to the nearest whole number.`;
   const answer = calculateAnswer(a, b, operator);
 
-  // Log to console for testing purposes
-  console.log("Generated Problem:", question);
-  console.log("Expected Answer:", answer);
-
   return { question, answer };
 }
 
