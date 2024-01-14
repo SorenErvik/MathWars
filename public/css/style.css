@@ -4,3 +4,6 @@
     width: 75%;
     margin: auto;
 }
+#questionContainer {
+    border: 1px solid blue;
+}
