@@ -13,3 +13,12 @@ export function renderQuestion(question) {
     // Append the new question to the container
     questionContainer.appendChild(questionElement);
   }
+
+export function renderLives(lives) {
+    const livesContainer = document.getElementById('livesContainer');
+
+    const livesElement = document.createElement('p');
+    livesElement.textContent = `Remaining Lives: ${lives}`;
+
+    livesContainer.appendChild(livesElement);
+}

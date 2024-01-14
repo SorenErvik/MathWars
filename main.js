@@ -1,5 +1,5 @@
 import { generateProblem } from './controllers/problemGenerator.js';
-import { renderQuestion } from './controllers/render-game.js';
+import { renderLives, renderQuestion } from './controllers/render-game.js';
 import userInputModule from './controllers/userInput.js';
 
 // Game loop or function
@@ -15,6 +15,9 @@ async function playGame() {
 
     // Display the problem to the user
     renderQuestion(question);
+
+    // Render the number of lives to the user
+    renderLives(lives);
 
     // Get user input using async/await
     try {
