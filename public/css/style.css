@@ -1,14 +1,21 @@
+body {
+    background-color: mediumpurple;
+}
 #gameContainer {
-    border: 1px solid black;
+    border: 10px solid white;
     height: 25rem;
     width: 75%;
     margin: 2.5% auto;
+    border-radius: 5%;
 }
 #questionContainer {
     border: 1px solid blue;
 }
 #startGameButton {
     width: 25%;
+    background-color: chartreuse;
+    border-radius: 5%;
+    border: 5px solid white;
 }
 .mathwarsH1 {
     margin: 0 auto;
