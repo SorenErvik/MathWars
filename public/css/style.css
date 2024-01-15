@@ -7,10 +7,19 @@
 #questionContainer {
     border: 1px solid blue;
 }
+#startGameButton {
+    width: 25%;
+}
 .mathwarsH1 {
     margin: 0 auto;
     width: fit-content;
 }
 .hidden {
     display: none;
+}
+.flex-startGameButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

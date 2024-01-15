@@ -52,6 +52,7 @@ document.getElementById('startGameButton').addEventListener('click', () => {
   //document.getElementById('startGameButton').classList.add('hidden');
   
     startGameButton.classList.add('hidden');
+    gameContainer.classList.toggle('flex-startGameButton');
     // Toggle visibility of other game elements
     questionContainer.classList.toggle("hidden");
     livesContainer.classList.toggle("hidden");
