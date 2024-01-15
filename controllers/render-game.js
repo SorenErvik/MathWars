@@ -1,5 +1,4 @@
 // render-game.js
-// renderGame.js
 export function renderQuestion(question) {
     const questionContainer = document.getElementById('questionContainer');
   
@@ -36,4 +35,18 @@ export function renderScore(score) {
     scoreElement.textContent = `Score: ${score}`;
 
     scoreContainer.appendChild(scoreElement);
+}
+
+
+
+export function renderHighscore(highscore) {
+  const highscoreContainer = document.getElementById('highscoreContainer');
+
+    // Clear existing content
+    highscoreContainer.innerHTML = '';
+
+    const highscoreElement = document.createElement('p');
+    highscoreElement.textContent = `Highscore: ${highscore}`;
+
+    highscoreContainer.appendChild(highscoreElement);
 }

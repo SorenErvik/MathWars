@@ -4,10 +4,10 @@ body {
 }
 #gameContainer {
     border: 10px solid white;
-    height: 25rem;
     width: 75%;
     margin: 2.5% auto;
     border-radius: 5%;
+    padding: 1%;
 }
 #questionContainer {
     border: 1px solid blue;

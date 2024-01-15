@@ -1,15 +1,14 @@
 
 import { generateProblem } from './controllers/problemGenerator.js';
-import { renderLives, renderQuestion, renderScore } from './controllers/render-game.js';
+import { renderHighscore, renderLives, renderQuestion, renderScore } from './controllers/render-game.js';
 import userInputModule from './controllers/userInput.js';
 
-
+let highscore = 0;
 // Game loop or function
 async function playGame() {
 
   let lives = 3;
   let score = 0;
-  
 
   while (lives > 0) {
     // Generate a problem
@@ -27,6 +26,8 @@ async function playGame() {
     // Render the score of the user
     renderScore(score);
 
+    renderHighscore(highscore);
+
     // Get user input using async/await
     try {
       const userAnswer = await userInputModule.handleButtonClick();
@@ -43,7 +44,11 @@ async function playGame() {
       console.error('Error:', error);
     }
   }
-
+  if (score > highscore) {
+    highscore = score;
+    renderHighscore(highscore);
+    console.log(`New highscore: ${highscore}`);
+  }
   console.log('Out of lives. Game over!');
 }
 
@@ -63,6 +68,7 @@ document.getElementById('startGameButton').addEventListener('click', () => {
     scoreContainer.classList.toggle("hidden");
     userInput.classList.toggle("hidden");
     submitButton.classList.toggle("hidden");
+    highscoreContainer.classList.toggle("hidden");
   
 
   
