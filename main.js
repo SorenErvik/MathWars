@@ -35,10 +35,12 @@ async function playGame() {
       if (userAnswer == expectedAnswer) {
         console.log('Correct!'); // Handle correct answer logic
         score++; // Increment score on correct answer
+        document.getElementById('userInput').value = ""; // Clear the user input
       } else {
         console.log('Incorrect!'); // Handle incorrect answer logic
         lives--; // Decrement lives on incorrect answer
         console.log(`Remaining Lives: ${lives}`);
+        document.getElementById('userInput').value = ""; // Clear the user input
       }
     } catch (error) {
       console.error('Error:', error);
