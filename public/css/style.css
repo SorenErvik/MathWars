@@ -2,8 +2,15 @@
     border: 1px solid black;
     height: 25rem;
     width: 75%;
-    margin: auto;
+    margin: 2.5% auto;
 }
 #questionContainer {
     border: 1px solid blue;
+}
+.mathwarsH1 {
+    margin: 0 auto;
+    width: fit-content;
+}
+.hidden {
+    display: none;
 }

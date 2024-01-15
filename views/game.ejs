@@ -1,15 +1,17 @@
 <%- include('partials/header') -%>
 
-<h1>This is game</h1>
-
+<h1 class="mathwarsH1">Welcome to MathWars!</h1>
 <div id="gameContainer">
-    <div id="questionContainer"></div>
-    <div id="livesContainer"></div>
-    <div id="scoreContainer"></div>
-
+    <!-- Ready to play button -->
     <button type="button" class="btn btn-primary" id="startGameButton">Ready to play?</button>
-    <input id="userInput" type="number"></input>
-    <button type="submit" class="btn btn-primary" id="submitButton">Primary</button>
+
+    <!-- Other game elements (initially hidden)-->
+    <div id="questionContainer" class="hidden"></div>
+    <div id="livesContainer" class="hidden"></div>
+    <div id="scoreContainer" class="hidden"></div>
+
+    <input id="userInput" type="number" class="hidden"></input>
+    <button type="submit" class="btn btn-primary hidden" id="submitButton">Primary</button>
 </div>
 
 <%- include('partials/footer') -%>

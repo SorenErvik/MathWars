@@ -48,3 +48,17 @@ async function playGame() {
 
 // Add event listener to start the game when the button is clicked
 document.getElementById('startGameButton').addEventListener('click', playGame);
+document.getElementById('startGameButton').addEventListener('click', () => {
+  //document.getElementById('startGameButton').classList.add('hidden');
+  
+    startGameButton.classList.add('hidden');
+    // Toggle visibility of other game elements
+    questionContainer.classList.toggle("hidden");
+    livesContainer.classList.toggle("hidden");
+    scoreContainer.classList.toggle("hidden");
+    userInput.classList.toggle("hidden");
+    submitButton.classList.toggle("hidden");
+  
+
+  
+});
