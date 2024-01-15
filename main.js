@@ -1,11 +1,15 @@
+
 import { generateProblem } from './controllers/problemGenerator.js';
 import { renderLives, renderQuestion, renderScore } from './controllers/render-game.js';
 import userInputModule from './controllers/userInput.js';
 
+
 // Game loop or function
 async function playGame() {
+
   let lives = 3;
   let score = 0;
+  
 
   while (lives > 0) {
     // Generate a problem

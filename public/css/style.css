@@ -1,5 +1,6 @@
 body {
     background-color: mediumpurple;
+    font-family: 'Chewy', cursive;
 }
 #gameContainer {
     border: 10px solid white;
@@ -13,13 +14,18 @@ body {
 }
 #startGameButton {
     width: 25%;
+}
+.greenBtn {
     background-color: chartreuse;
     border-radius: 5%;
     border: 5px solid white;
+    color: deeppink;
+    font-size: xx-large;
 }
 .mathwarsH1 {
     margin: 0 auto;
     width: fit-content;
+    color: bisque;
 }
 .hidden {
     display: none;
