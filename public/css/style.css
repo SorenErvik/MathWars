@@ -9,23 +9,20 @@ body {
     border-radius: 5%;
     padding: 1%;
 }
-#questionContainer {
-    border: 1px solid blue;
-}
 #startGameButton {
     width: 25%;
 }
-.greenBtn {
-    background-color: chartreuse;
+.whiteBtn {
+    background-color: antiquewhite;
     border-radius: 5%;
     border: 5px solid white;
-    color: deeppink;
+    color: black;
     font-size: xx-large;
 }
 .mathwarsH1 {
     margin: 0 auto;
     width: fit-content;
-    color: bisque;
+    color: antiquewhite;
 }
 .hidden {
     display: none;
