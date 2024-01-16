@@ -68,7 +68,13 @@ async function playGame() {
 
 // Add event listener to start the game when the button is clicked
 //document.getElementById('startGameButton').addEventListener('click', playGame);
-//document.getElementById('restartGameButton').addEventListener('click', playGame);
+document.getElementById('restartGameButton').addEventListener('click', () => {
+  playGame();
+  restartGameButton.classList.toggle('hidden');
+  gameOverContainer.classList.toggle('hidden');
+  userInput.classList.toggle('hidden');
+  submitButton.classList.toggle('hidden');
+});
 document.getElementById('startGameButton').addEventListener('click', () => {
   //document.getElementById('startGameButton').classList.add('hidden');
   playGame();
