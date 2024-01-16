@@ -19,6 +19,15 @@ body {
     color: black;
     font-size: xx-large;
 }
+.btn30 {
+    width: 30%;
+}
+.midDivContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
 .mathwarsH1 {
     margin: 0 auto;
     width: fit-content;
