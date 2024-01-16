@@ -50,3 +50,18 @@ export function renderHighscore(highscore) {
 
     highscoreContainer.appendChild(highscoreElement);
 }
+
+export function renderGameOver(score) {
+  const gameOverContainer = document.getElementById('gameOverContainer');
+
+  // Clear existing content
+  gameOverContainer.innerHTML = '';
+
+  const gameOverElement = document.createElement('p');
+  gameOverElement.textContent = `Game over! Your score was ${score}`;
+
+  const playAgainButton = document.getElementById('startGameButton');
+  playAgainButton.innerHTML = `Play Again`;
+
+  gameOverContainer.appendChild(gameOverElement);
+}

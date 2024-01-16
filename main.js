@@ -1,6 +1,6 @@
 
 import { generateProblem } from './controllers/problemGenerator.js';
-import { renderHighscore, renderLives, renderQuestion, renderScore } from './controllers/render-game.js';
+import { renderGameOver, renderHighscore, renderLives, renderQuestion, renderScore } from './controllers/render-game.js';
 import userInputModule from './controllers/userInput.js';
 
 let highscore = 0;
@@ -55,6 +55,10 @@ async function playGame() {
   alert('Game over!');
   userInput.classList.toggle('hidden');
   submitButton.classList.toggle('hidden');
+  gameOverContainer.classList.toggle('hidden');
+  //restartGameButton.classList.toggle('hidden');
+
+  renderGameOver(score);
   // Do some div that says game over bla bla bla
   //Play again button. Restarts the whole thing
 }
@@ -63,10 +67,11 @@ async function playGame() {
 //playGame();
 
 // Add event listener to start the game when the button is clicked
-document.getElementById('startGameButton').addEventListener('click', playGame);
+//document.getElementById('startGameButton').addEventListener('click', playGame);
+//document.getElementById('restartGameButton').addEventListener('click', playGame);
 document.getElementById('startGameButton').addEventListener('click', () => {
   //document.getElementById('startGameButton').classList.add('hidden');
-  
+  playGame();
     startGameButton.classList.add('hidden');
     gameContainer.classList.toggle('flex-startGameButton');
     // Toggle visibility of other game elements
