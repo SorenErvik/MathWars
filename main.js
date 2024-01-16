@@ -57,6 +57,11 @@ async function playGame() {
   submitButton.classList.toggle('hidden');
   gameOverContainer.classList.toggle('hidden');
   restartGameButton.classList.toggle('hidden');
+  questionContainer.classList.toggle('hidden');
+  livesContainer.classList.toggle('hidden');
+  scoreContainer.classList.toggle('hidden');
+  highscoreContainer.classList.toggle('hidden');
+  gameContainer.classList.toggle('gameOverFlex');
 
   renderGameOver(score);
   // Do some div that says game over bla bla bla
@@ -74,6 +79,11 @@ document.getElementById('restartGameButton').addEventListener('click', () => {
   gameOverContainer.classList.toggle('hidden');
   userInput.classList.toggle('hidden');
   submitButton.classList.toggle('hidden');
+  gameContainer.classList.toggle('gameOverFlex');
+  highscoreContainer.classList.toggle('hidden');
+  scoreContainer.classList.toggle('hidden');
+  livesContainer.classList.toggle('hidden');
+  questionContainer.classList.toggle('hidden');
 });
 document.getElementById('startGameButton').addEventListener('click', () => {
   //document.getElementById('startGameButton').classList.add('hidden');

@@ -60,8 +60,7 @@ export function renderGameOver(score) {
   const gameOverElement = document.createElement('p');
   gameOverElement.textContent = `Game over! Your score was ${score}`;
 
-  const playAgainButton = document.getElementById('startGameButton');
-  playAgainButton.innerHTML = `Play Again`;
+
 
   gameOverContainer.appendChild(gameOverElement);
 }

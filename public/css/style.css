@@ -43,9 +43,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 .answerContainer {
     display: flex;
     justify-content: center;
+}
+.gameOverFlex {
+    display: flex;
+    justify-content: center;
+}
+.gameOverMargin {
+    margin-left: 10%;
 }
