@@ -56,7 +56,7 @@ async function playGame() {
   userInput.classList.toggle('hidden');
   submitButton.classList.toggle('hidden');
   gameOverContainer.classList.toggle('hidden');
-  //restartGameButton.classList.toggle('hidden');
+  restartGameButton.classList.toggle('hidden');
 
   renderGameOver(score);
   // Do some div that says game over bla bla bla
