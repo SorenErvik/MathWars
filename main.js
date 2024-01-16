@@ -52,6 +52,11 @@ async function playGame() {
     console.log(`New highscore: ${highscore}`);
   }
   console.log('Out of lives. Game over!');
+  alert('Game over!');
+  userInput.classList.toggle('hidden');
+  submitButton.classList.toggle('hidden');
+  // Do some div that says game over bla bla bla
+  //Play again button. Restarts the whole thing
 }
 
 // Call the playGame function to start the game
