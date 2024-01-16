@@ -12,6 +12,9 @@ body {
 #startGameButton {
     width: 25%;
 }
+#userInput {
+    margin-right: 5%;
+}
 .whiteBtn {
     background-color: antiquewhite;
     border-radius: 5%;
@@ -41,4 +44,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.answerContainer {
+    display: flex;
+    justify-content: center;
 }
