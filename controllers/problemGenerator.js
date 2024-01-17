@@ -1,21 +1,26 @@
 /*
 This module is responsible for generating the math problems for the user to solve.
 */
+// Declaring our a and b variables
 let a;
 let b;
+
+// Creating the function that randomly determines what number that a will represent
 function determineA() {
   a = Math.floor(Math.random() * 12) + 1;
   return a;
 }
+
+// Creating the function that randomly determines what number that b will represent
 function determineB() {
   b = Math.floor(Math.random() * 12) + 1;
   return b;
 }
 
-//let a = Math.floor(Math.random() * 12) + 1; // Determining the first number
-//let b = Math.floor(Math.random() * 12) + 1; // Determining the second number
-let operator; // Declare the operator variable outside the function
+// Declare the operator variable outside the function
+let operator;
 
+// Creating the function that randomly determines what operator will be used
 function determineOperator() {
   let num = Math.random();
   if (num < 0.26) {
@@ -29,10 +34,7 @@ function determineOperator() {
   }
 }
 
-//determineOperator();
-//determineA();
-//determineB();
-
+// Creating the function that will determine the answer to the problem
 function calculateAnswer(a, b, operator) {
   switch (operator) {
     case "+":
@@ -49,11 +51,13 @@ function calculateAnswer(a, b, operator) {
   }
 }
 
+//Calling our functions to get the logic for the game going
 function generateProblem() {
   determineOperator();
   determineA();
   determineB();
 
+  // Here we declare question and answer variables and assign them the appropriate values
   const question = `What is ${a} ${operator} ${b}? Round down to the nearest whole number.`;
   const answer = calculateAnswer(a, b, operator);
 
@@ -61,6 +65,6 @@ function generateProblem() {
 }
 
 
-// You can also export the generateProblem function if needed
+// Exporting the generateProblem function
 export { generateProblem };
 
