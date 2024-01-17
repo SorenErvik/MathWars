@@ -1,10 +1,13 @@
-
+//Import statements
 import { generateProblem } from './controllers/problemGenerator.js';
 import { renderGameOver, renderHighscore, renderLives, renderQuestion, renderScore } from './controllers/render-game.js';
 import userInputModule from './controllers/userInput.js';
 
+// Initializing the highscore variable
 let highscore = 0;
 // Game loop or function
+
+// Creating the playGmae function
 async function playGame() {
 
   let lives = 3;
@@ -26,6 +29,7 @@ async function playGame() {
     // Render the score of the user
     renderScore(score);
 
+    // Render the highscore of the user
     renderHighscore(highscore);
 
     // Get user input using async/await
@@ -39,20 +43,20 @@ async function playGame() {
       } else {
         console.log('Incorrect!'); // Handle incorrect answer logic
         lives--; // Decrement lives on incorrect answer
-        console.log(`Remaining Lives: ${lives}`);
         document.getElementById('userInput').value = ""; // Clear the user input
       }
     } catch (error) {
       console.error('Error:', error);
     }
   }
+  // If statement to determine if the score will be the new highscore
   if (score > highscore) {
     highscore = score;
     renderHighscore(highscore);
     console.log(`New highscore: ${highscore}`);
   }
-  console.log('Out of lives. Game over!');
-  alert('Game over!');
+
+  // Our styling of the game container
   userInput.classList.toggle('hidden');
   submitButton.classList.toggle('hidden');
   gameOverContainer.classList.toggle('hidden');
@@ -63,16 +67,11 @@ async function playGame() {
   highscoreContainer.classList.toggle('hidden');
   gameContainer.classList.toggle('gameOverFlex');
 
+  // Render the GameOver function
   renderGameOver(score);
-  // Do some div that says game over bla bla bla
-  //Play again button. Restarts the whole thing
 }
 
-// Call the playGame function to start the game
-//playGame();
-
-// Add event listener to start the game when the button is clicked
-//document.getElementById('startGameButton').addEventListener('click', playGame);
+// Add event listener to restart the game when the button is clicked
 document.getElementById('restartGameButton').addEventListener('click', () => {
   playGame();
   restartGameButton.classList.toggle('hidden');
@@ -85,8 +84,9 @@ document.getElementById('restartGameButton').addEventListener('click', () => {
   livesContainer.classList.toggle('hidden');
   questionContainer.classList.toggle('hidden');
 });
+
+// Add event listener to start the game when the button is clicked
 document.getElementById('startGameButton').addEventListener('click', () => {
-  //document.getElementById('startGameButton').classList.add('hidden');
   playGame();
     startGameButton.classList.add('hidden');
     gameContainer.classList.toggle('flex-startGameButton');
@@ -97,7 +97,4 @@ document.getElementById('startGameButton').addEventListener('click', () => {
     userInput.classList.toggle("hidden");
     submitButton.classList.toggle("hidden");
     highscoreContainer.classList.toggle("hidden");
-  
-
-  
 });
