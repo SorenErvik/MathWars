@@ -52,3 +52,29 @@ Mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js, facilit
 Game Logic
 
 The core game logic is implemented in JavaScript, making extensive use of asynchronous programming to handle user input, generate math problems, and update the game state in real-time. The game engine ensures a dynamic and responsive experience for players.
+
+# Current Optimizations & Updates:
+
+MathWars is continuously evolving to provide an optimized and enjoyable experience for players. Here are some recent optimizations and updates:
+
+Performance Improvements
+I've implemented various performance optimizations to enhance the overall responsiveness and speed of the MathWars game. These optimizations include:
+
+Code Refactoring: Streamlining and improving code efficiency to reduce load times and enhance gameplay responsiveness.
+
+User Interface Enhancements
+MathWars has undergone updates to its user interface, aiming to provide a more intuitive and visually appealing experience. Notable UI enhancements include:
+
+Responsive Design: Ensuring that MathWars adapts seamlessly to different screen sizes, making the game accessible on various devices.
+Visual Feedback: Incorporating enhanced visual feedback for correct and incorrect answers to provide a more engaging gaming experience.
+
+Bug Fixes
+As part of my commitment to delivering a bug-free experience, I have addressed various reported issues and fixed bugs to ensure a smooth and error-free gameplay environment.
+
+Future Features
+
+Highscore Leaderboard
+One of the exciting features in the pipeline is the introduction of a highscore leaderboard. Players will be able to see how their scores compare to others, fostering healthy competition and encouraging players to strive for the top spot.
+
+Multiplayer Sessions
+I'm working on incorporating multiplayer sessions, allowing entire classes or groups to join and compete against each other in real-time. This feature will enable collaborative learning and friendly competition within a classroom setting.
