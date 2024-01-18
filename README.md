@@ -57,7 +57,7 @@ The core game logic is implemented in JavaScript, making extensive use of asynch
 
 MathWars is continuously evolving to provide an optimized and enjoyable experience for players. Here are some recent optimizations and updates:
 
-`Performance Improvements` 
+`Performance Improvements`
 
 I've implemented various performance optimizations to enhance the overall responsiveness and speed of the MathWars game. These optimizations include:
 
@@ -74,7 +74,7 @@ Visual Feedback: Incorporating enhanced visual feedback for correct and incorrec
 
 As part of my commitment to delivering a bug-free experience, I have addressed various reported issues and fixed bugs to ensure a smooth and error-free gameplay environment.
 
-`Future Features`
+# Future Features
 
 `Highscore Leaderboard`
 
