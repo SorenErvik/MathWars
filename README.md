@@ -33,6 +33,7 @@ Link to project: https://mathwars-a069d8c7d704.herokuapp.com/
 Tech used: HTML, CSS, JavaScript, Node.js, Express, MongoDB, EJS, Passport.js
 
 `Frontend`
+
 The frontend of MathWars is built using modern web technologies to deliver a seamless and visually appealing user experience. Key frontend technologies include:
 
 HTML5: Providing the structure for the web pages.
