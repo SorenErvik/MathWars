@@ -32,12 +32,23 @@ Link to project: https://mathwars-a069d8c7d704.herokuapp.com/
 
 Tech used: HTML, CSS, JavaScript, Node.js, Express, MongoDB, EJS, Passport.js
 
-MathWars is an innovative web application crafted to transform math practice for elementary school students into an enjoyable and enriching experience. Our platform is designed to cater specifically to the unique needs of young learners, offering a dynamic and visually appealing environment that makes math engaging.
+Frontend
 
-MathWars takes math practice beyond traditional methods by incorporating an element of friendly competition. Students can compete with their peers, fostering a sense of camaraderie and motivation to excel. Leaderboards and progress tracking tools empower students to monitor their improvement over time, creating a positive and rewarding learning experience.
+The frontend of MathWars is built using modern web technologies to deliver a seamless and visually appealing user experience. Key frontend technologies include:
 
-Ensuring a safe and supportive environment for young learners is our priority. MathWars adheres to strict security and privacy standards to create a worry-free space for students to explore and learn. Parents and educators can trust that MathWars provides a wholesome platform for fostering a love for math.
+HTML5: Providing the structure for the web pages.
+CSS3: Styling the application and ensuring a responsive design for various screen sizes.
+JavaScript (ES6+): Implementing the interactive features and game logic.
 
-Math practice shouldn't be limited by time or place. MathWars is accessible from any device with an internet connection, allowing students to practice their math skills conveniently at home, in school, or on the go. This flexibility encourages consistent learning habits and empowers students to take charge of their education.
+Backend
 
-MathWars is not just a math practice platform; it's a gateway to a world where learning is synonymous with enjoyment. I invite elementary school students, parents, and educators to join MathWars and embark on a mathematical journey where every challenge is a stepping stone to success. Let's make math fun again and empower the next generation of mathematicians with MathWars!
+MathWars leverages a backend server to handle user authentication, store high scores, and manage game data. The backend is powered by:
+
+Node.js: Executing server-side JavaScript code.
+Express.js: A lightweight web application framework for Node.js, simplifying the creation of robust APIs.
+MongoDB: A NoSQL database for storing user information, high scores, and other relevant data.
+Mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js, facilitating interaction with the database.
+
+Game Logic
+
+The core game logic is implemented in JavaScript, making extensive use of asynchronous programming to handle user input, generate math problems, and update the game state in real-time. The game engine ensures a dynamic and responsive experience for players.
